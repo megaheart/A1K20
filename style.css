@@ -1,0 +1,225 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #444;
+    background-color: #eaeaea;
+}
+#toolbar{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;   
+    box-shadow: 0 4px 2px #0003;
+    background: #fff;
+    z-index: 9999;
+}
+#search {
+    display: block;
+    font-size: 24px;
+    color: #3b3b3b;
+    padding: 16px 118px 16px 15px;
+    position: relative;
+}
+#toolbar i{
+    width:100px;
+    margin: 15px 0 10px 6%;
+    color: gray;
+    font-size: 35px;
+    float: left;
+}
+#main{
+    margin:100px 20px;
+}
+.mainbox{
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 6px #0202024d;
+    margin-bottom: 40px;
+}
+.title {
+    padding: 20px 40px;
+    float: left;
+    width: 100%;
+}
+.title > h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 28px 0 0 15px;
+    position: relative;
+    float: left;
+    color: #00b722;
+}
+.title > h2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: -7px;
+    height: 3px;
+    width: 118%;
+    border-radius: 16px;
+    background: #00b722;
+}
+.birthdaybox>.title>h2{ 
+    color: #ff001b;
+}
+.birthdaybox>.title>h2:before{ 
+    background: #ff3e53;
+}
+.contentbox {
+    padding: 5px 30px 30px 30px;
+    float: left;
+    width: 100%;
+}
+.contentbox>h3 {
+    font-size: 16px;
+    color: #006cc8;
+}
+.contentbox>div {
+    padding: 15px;
+}
+.membox{
+    transition: 0.1s;
+    float: left;
+    width: 100%;
+}
+.memtitle {
+    float: left;
+    width: 100%;
+    position: relative;
+    height: 100px;
+    transition: 0.1s;
+}
+.memtitle>img {
+    transition: 0.1s;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+.memtitle>h4 {
+    transition: 0.1s;
+    position: absolute;
+    bottom: 30px;
+    left: 120px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #565656;
+}
+.memtitle>button{
+    position: absolute;
+    top: 28px;
+    right: 35px;
+}
+.memtitle > button:before {
+    transition: 0.1s;
+    content: "Chi Tiết";
+    display: block;
+    padding: 8px 15px;
+    font-size: 20px;
+    color: #fff;
+    background: #0069d1;
+    border-radius: 3px;
+    box-shadow: 1px 2px 5px #0006;
+}
+.memtitle > button:hover:before {
+    background: #0080ff;
+    cursor: pointer;
+}
+.memtitle > button:active:before {
+    background: #0069d1;
+    box-shadow: 0 0 0 #0006;
+    transform: translate(1px,2px);
+}
+.meminfo {
+    transition: 0.1s;
+    display: none;
+    float: left;
+    width: 100%;
+    padding: 10px 0px 20px 20px;
+}
+.meminfo td {
+    padding: 5px 20px 5px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #414141;
+}
+.meminfo td:first-child {
+    color: #484848;
+    padding: 6px 20px 8px 0;
+    font-size: 16px;
+    width: 164px;
+}
+.boxborder{
+    float: left;
+    height: 5px;
+    width: 70%;
+    margin: 15px 15%;
+    border-bottom: 1px dashed #353536;
+}
+.socialnetwork>a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #0006;
+    transition: 0.1s;
+}
+.socialnetwork > a > i {
+    font-size: 30px;
+    float: left;
+}
+.socialnetwork > a > span {
+    display: block;
+    float: left;
+    padding: 3px 0 0px 10px;
+}
+.socialnetwork > a:hover {
+    transform: translate(0px,2px);
+}
+.face{background: #3B5998;}
+.instagram{background: #3F729B;}
+.twitter{background: #55ACEE;}
+.googleplus{background: #EA4335;}
+.face:hover{background: #324b81;}
+.instagram:hover{background: #345d7f;}
+.twitter:hover{background: #2e99ea;}
+.googleplus:hover{background: #e72918;}
+.opened>.memtitle{
+    height: 225px;
+}
+.opened>.memtitle>img{
+    height:200px;
+    width:200px;   
+}
+.opened>.memtitle>h4{
+    bottom: 10px;
+    left: 215px;
+}
+.opened>.memtitle > button:before{
+    content: "Thu Gọn";
+}
+.opened>.meminfo {
+    display:block;
+}
+@media only screen and (min-width: 1024px) {
+    #main{
+        margin:100px auto;
+        width:900px;
+    }
+}
